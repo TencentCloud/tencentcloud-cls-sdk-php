@@ -1,33 +1,3 @@
-﻿# TencentCloud Php Log Service PHP SDK
-
-## SDK RELEASE TIME
-
-2022-04-20
-
-## Introduction
-
-Log Service SDK for PHP，used to set log data to TencentCloud CLS Log Service.
-
-API Reference: 
-
-### Summary
-
-1. Request-Request style Restful API interface
-2. Use Protocol buffer to send data 
-3. Data can be protobuf compressed when sending to server
-4. TencentCloudLogException will be thrown if any error happen
-5. Introduce simple logger for submit log easily with different levels
-6. Create local log cache to submit several logs in single http post.
-
-## Environment Requirement
-
-1. PHP 5.6.0 and later：Master Branch
-
-## LZ4 压缩上传
-1、暂不支持LZ4 压缩上传
-
-## Demo
-```
 <?php
 
 require_once __DIR__.'../../vendor/autoload.php';
@@ -70,4 +40,3 @@ $token = "";
 $client = new Client($endpoint, $accessKeyId, $accessKey,$token);
 putLogs($client, $topicId);
 
-```
