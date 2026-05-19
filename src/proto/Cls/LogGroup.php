@@ -40,11 +40,11 @@ class LogGroup extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Cls\Log[]|\Google\Protobuf\Internal\RepeatedField $logs
+     *     @type array<\Cls\Log>|\Google\Protobuf\Internal\RepeatedField $logs
      *     @type string $contextFlow
      *     @type string $filename
      *     @type string $source
-     *     @type \Cls\LogTag[]|\Google\Protobuf\Internal\RepeatedField $logTags
+     *     @type array<\Cls\LogTag>|\Google\Protobuf\Internal\RepeatedField $logTags
      * }
      */
     public function __construct($data = NULL) {
@@ -63,7 +63,7 @@ class LogGroup extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .cls.Log logs = 1;</code>
-     * @param \Cls\Log[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Cls\Log>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setLogs($var)
@@ -181,7 +181,7 @@ class LogGroup extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .cls.LogTag logTags = 5;</code>
-     * @param \Cls\LogTag[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Cls\LogTag>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setLogTags($var)
