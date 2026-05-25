@@ -24,7 +24,7 @@ class LogGroupList extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \Cls\LogGroup[]|\Google\Protobuf\Internal\RepeatedField $logGroupList
+     *     @type array<\Cls\LogGroup>|\Google\Protobuf\Internal\RepeatedField $logGroupList
      * }
      */
     public function __construct($data = NULL) {
@@ -43,7 +43,7 @@ class LogGroupList extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .cls.LogGroup logGroupList = 1;</code>
-     * @param \Cls\LogGroup[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Cls\LogGroup>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setLogGroupList($var)

@@ -29,7 +29,7 @@ class Log extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int|string $time
-     *     @type \Cls\Log\Content[]|\Google\Protobuf\Internal\RepeatedField $contents
+     *     @type array<\Cls\Log\Content>|\Google\Protobuf\Internal\RepeatedField $contents
      * }
      */
     public function __construct($data = NULL) {
@@ -70,7 +70,7 @@ class Log extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .cls.Log.Content contents = 2;</code>
-     * @param \Cls\Log\Content[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Cls\Log\Content>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setContents($var)
